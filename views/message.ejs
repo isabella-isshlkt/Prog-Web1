@@ -1,0 +1,40 @@
+<%- include('./partials/header') %>
+
+<div class="container min-vh-100 d-flex align-items-center justify-content-center">
+
+  <div
+    class="card shadow border-0 text-center"
+    style="max-width: 600px; width: 100%;"
+  >
+
+    <div class="card-body p-5">
+
+      <h1 class="mb-4">
+        Sua mensagem do dia
+      </h1>
+
+      <blockquote class="blockquote mb-4">
+        <p><%= msg %></p>
+      </blockquote>
+
+      <a
+        href="/mensagem"
+        class="btn btn-primary w-100 mb-2"
+      >
+        Nova mensagem
+      </a>
+
+      <a
+        href="/"
+        class="btn btn-outline-secondary w-100"
+      >
+        Voltar ao início
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<%- include('./partials/footer') %>
